@@ -35,23 +35,23 @@ public virtual class TriggerHandler {
     addToLoopCount();
 
     // dispatch to the correct handler method
-    if(this.context == TriggerContext.BEFORE_INSERT) {
-      this.beforeInsert();
-    } else if(this.context == TriggerContext.BEFORE_UPDATE) {
-      this.beforeUpdate();
-    } else if(this.context == TriggerContext.BEFORE_DELETE) {
-      this.beforeDelete();
-    } else if(this.context == TriggerContext.AFTER_INSERT) {
-      this.afterInsert();
-    } else if(this.context == TriggerContext.AFTER_UPDATE) {
-      this.afterUpdate();
-    } else if(this.context == TriggerContext.AFTER_DELETE) {
-      this.afterDelete();
-    } else if(this.context == TriggerContext.AFTER_UNDELETE) {
-      this.afterUndelete();
-    }
+   // if(this.context == TriggerContext.BEFORE_INSERT) {
+   //   this.beforeInsert();
+   // } else if(this.context == TriggerContext.BEFORE_UPDATE) {
+    //  this.beforeUpdate();
+   // } else if(this.context == TriggerContext.BEFORE_DELETE) {
+    //  this.beforeDelete();
+   // } else if(this.context == TriggerContext.AFTER_INSERT) {
+    //  this.afterInsert();
+   // } else if(this.context == TriggerContext.AFTER_UPDATE) {
+    //  this.afterUpdate();
+   // } else if(this.context == TriggerContext.AFTER_DELETE) {
+    //  this.afterDelete();
+   // } else if(this.context == TriggerContext.AFTER_UNDELETE) {
+    //  this.afterUndelete();
+   // }
 
-  }
+//  }
 
   public void setMaxLoopCount(Integer max) {
     String handlerName = getHandlerName();

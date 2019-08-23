@@ -35,6 +35,8 @@ public virtual class TriggerHandler {
     addToLoopCount();
 
     // dispatch to the correct handler method
+    
+    // commented out below to trigger incremental scan
    // if(this.context == TriggerContext.BEFORE_INSERT) {
    //   this.beforeInsert();
    // } else if(this.context == TriggerContext.BEFORE_UPDATE) {
